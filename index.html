@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title id="title">Veldora – Product</title>
+  <meta name="description" content="Veldora – premium quality with fast delivery.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" href="/assets/logo.png" />
+</head>
+<body>
+  <!-- Top nav -->
+  <header class="nav">
+    <div class="container row space">
+      <a class="brand" href="#">
+        <img src="/assets/logo.png" alt="Veldora" class="logo" />
+        <span id="brand">Veldora</span>
+      </a>
+      <nav class="navlinks">
+        <a href="#features">Benefits</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1 id="productName">Product name</h1>
+        <ul id="highlights" class="bullets"></ul>
+
+        <div class="cta">
+          <button id="buyButton" class="btn btn-primary">Buy now</button>
+          <p class="price"><span id="currency">€</span> <span id="price">0.00</span> <span class="vat">incl. VAT</span></p>
+          <p class="sub">Secure checkout with Stripe</p>
+        </div>
+
+        <!-- Payment logos (local PNGs you downloaded) -->
+        <div class="payment-logos">
+          <img src="/assets/pay/visa.png" alt="Visa" />
+          <img src="/assets/pay/mastercard.png" alt="Mastercard" />
+          <img src="/assets/pay/amex.png" alt="American Express" />
+          <img src="/assets/pay/bancontact.png" alt="Bancontact" />
+          <img src="/assets/pay/ideal.png" alt="iDEAL" />
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img id="heroImage" src="/assets/hero.jpg" alt="Product" class="hero-img" />
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section container">
+      <h2>Why <span id="brand2">Veldora</span>?</h2>
+      <div class="grid-3">
+        <div class="card"><h3>Durable</h3><p>Premium materials & timeless design.</p></div>
+        <div class="card"><h3>Easy</h3><p>Works right out of the box.</p></div>
+        <div class="card"><h3>Fast support</h3><p>Email: <a href="mailto:support@veldora.com">support@veldora.com</a></p></div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section alt">
+      <div class="container">
+        <h2>What customers say</h2>
+        <div class="grid-3">
+          <blockquote class="quote"><p>“Great quality for the price.”</p><cite>— Emma B.</cite></blockquote>
+          <blockquote class="quote"><p>“Minimal and solid. Works perfectly.”</p><cite>— Jonas V.</cite></blockquote>
+          <blockquote class="quote"><p>“Easy checkout and tracking.”</p><cite>— Sara K.</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section container">
+      <h2>FAQ</h2>
+      <div id="faqList"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div class="brand-inline">
+        <img src="/assets/logo.png" alt="Veldora" class="logo-sm" />
+        <strong id="brand3">Veldora</strong>
+      </div>
+      <div class="links">
+        <a href="#" class="muted">Shipping & Delivery</a>
+        <a href="#" class="muted">Returns & Right of Withdrawal</a>
+        <a href="#" class="muted">Privacy & Cookies</a>
+        <a href="mailto:support@veldora.com" class="muted">Contact</a>
+      </div>
+      <p class="muted">© <span id="year"></span> <span id="brand4">Veldora</span>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
