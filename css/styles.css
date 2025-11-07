@@ -1,0 +1,33 @@
+:root{
+  --bg:#0d0f14; --panel:#121520; --text:#e7ebf3; --muted:#9aa3b2;
+  --accent:#6c5ce7; --card:#161a27; --border:#1e2434;
+}
+*{box-sizing:border-box} html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,var(--bg),#0b0d12);color:var(--text)}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+.section{padding:72px 0}.section.alt{background:var(--panel)}
+h1,h2,h3{letter-spacing:.2px} h1{font-size:clamp(32px,4vw,48px);line-height:1.1;margin:0 0 12px}
+h2{font-size:clamp(24px,3vw,32px);margin:0 0 20px} h3{margin:0 0 8px}
+
+.nav{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(13,15,20,.7);border-bottom:1px solid var(--border);z-index:20}
+.row{display:flex;align-items:center}.space{justify-content:space-between}
+.nav a{color:var(--text);text-decoration:none}.navlinks a{margin-left:18px;opacity:.85}.navlinks a:hover{opacity:1}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700}.logo{width:28px;height:28px}.logo-sm{width:20px;height:20px}
+
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:56px 0}
+.hero-text .bullets{list-style:none;padding:0;margin:16px 0;color:#cfd6e6}
+.hero-media{display:flex;justify-content:center}
+.hero-img{width:100%;max-width:520px;border-radius:16px;border:1px solid var(--border);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.cta{margin:22px 0}.btn{padding:14px 20px;border-radius:12px;border:1px solid transparent;font-weight:600;cursor:pointer}
+.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{filter:brightness(1.08)}
+.price{font-size:20px;margin:10px 0 0}.sub{color:var(--muted);margin:6px 0 0}
+.trust{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:14px}.trust img{height:20px;opacity:.85;filter:grayscale(1)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card,.quote,details{background:var(--card);border:1px solid var(--border);padding:18px;border-radius:14px}
+details>summary{cursor:pointer;font-weight:600} details>p{color:#cbd3e6;margin:8px 0 0}
+
+.footer{border-top:1px solid var(--border);padding:32px 0;background:#0b0d12}
+.foot-grid{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+.muted{color:var(--muted);text-decoration:none}.muted:hover{color:#cfd6e6}
+
+@media (max-width:960px){.hero{grid-template-columns:1fr;gap:24px}.grid-3{grid-template-columns:1fr}}
